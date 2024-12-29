@@ -24,8 +24,16 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
  <style>
+  body{
+    font-family: "New York" !important;
+  }
+  .collection-item__title span{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: .2em;
+  }
 .support-floater {
-    background-image: url(././images/support-whatsapp.svg);
+    background-image: url(./images/support-whatsapp.svg);
     background-size: 65px !important;
 }
 .support-floater {
@@ -50,6 +58,51 @@
     background-position: 50% 50%;
     box-shadow: 0 5px 4px 0 rgb(0 0 0 / 26%);
     right: 2%;
+}
+.collection-image--portrait {
+    padding-top: 150%;
+}
+.collection-image {
+    position: relative;
+    transition: transform .3s ease;
+    
+}
+.lazyautosizes.lazyloaded{
+  position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+.image-wrap {
+    background: #fff;
+    background: var(--colorSmallImageBg);
+    overflow: hidden;
+}
+.collection-item__title--center[class*=collection-item__title--overlaid], .collection-item__title--left[class*=collection-item__title--overlaid], .collection-item__title--right[class*=collection-item__title--overlaid] {
+    top: 50%;
+    transform: translateY(-50%);
+}
+.collection-item__title--bottom-center, .collection-item__title--center, .collection-item__title--top-center {
+    text-align: center;
+}
+.collection-item__title--overlaid {
+    color: #fff;
+    text-shadow: 0 0 50px #000;
+}
+.collection-item__title--overlaid, .collection-item__title--overlaid-box {
+    display: block;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+}
+.collection-item__title {
+    display: block;
+    z-index: 2;
+    font-size: calc(var(--typeCollectionTitle)* .8);
+    line-height: 1em;
 }
  </style>
 </head>
@@ -115,6 +168,167 @@
   </section>
   <!-- end slider section -->
 
+  <section class="shop_section layout_padding">
+    <div class="container">
+      <div class="heading_container heading_center">
+        <h2>
+          Featured categories
+        </h2>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+                <div class="collection-image collection-image--portrait image-wrap">
+                  <img class="lazyautosizes lazyloaded"  src="images/23FA9F16-7A4A-4ABE-A4E6-7A97120385EC_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                    data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                    style="object-position: center center;"
+                    sizes="279px">
+              
+                  <noscript>
+                    <img class="lazyloaded"
+                    src="images/23FA9F16-7A4A-4ABE-A4E6-7A97120385EC_360x.jpg"
+                      alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree">
+                  </noscript>
+                </div>
+                <span
+                  class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                  <span>
+                    Pure Zari Kanchipuram Silks
+                  </span>
+                </span>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+              <div class="collection-image collection-image--portrait image-wrap">
+                <img class="lazyautosizes lazyloaded"   src="images/2A1AFBC1-0519-451F-B960-B4C0CC208D20_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                  data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                  style="object-position: center center;"
+                  sizes="279px">
+              </div>
+              <span
+                class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                <span>
+                      Half Fine Zari Kanchipuram Silks
+                </span>
+              </span>
+          </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+              <div class="collection-image collection-image--portrait image-wrap">
+                <img class="lazyautosizes lazyloaded"   src="images/tussar_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                  data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                  style="object-position: center center;"
+                  sizes="279px">
+              </div>
+              <span
+                class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                <span>
+                      Tussar Silk Sarees
+                </span>
+              </span>
+          </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+              <div class="collection-image collection-image--portrait image-wrap">
+                <img class="lazyautosizes lazyloaded"   src="images/soft-silk_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                  data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                  style="object-position: center center;"
+                  sizes="279px">
+              </div>
+              <span
+                class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                <span>    
+                     Soft Silks
+                </span>
+              </span>
+          </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+              <div class="collection-image collection-image--portrait image-wrap">
+                <img class="lazyautosizes lazyloaded"   src="images/DSC07619_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                  data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                  style="object-position: center center;"
+                  sizes="279px">
+              </div>
+              <span
+                class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                <span>
+                      Silk Cotton Sarees
+                </span>
+              </span>
+          </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+              <div class="collection-image collection-image--portrait image-wrap">
+                <img class="lazyautosizes lazyloaded"   src="images/cover_photo_3_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                  data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                  style="object-position: center center;"
+                  sizes="279px">
+              </div>
+              <span
+                class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                <span>
+                     Gadwal Silk Sarees
+                </span>
+              </span>
+          </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+              <div class="collection-image collection-image--portrait image-wrap">
+                <img class="lazyautosizes lazyloaded"   src="images/DSC09355_e199a8f6-6aab-4425-a686-a88c374e6499_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                  data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                  style="object-position: center center;"
+                  sizes="279px">
+              </div>
+              <span
+                class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                <span>
+                    Ikat Sarees
+                </span>
+              </span>
+          </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="box">
+            <a href="" class="collection-item collection-item--overlaid aos-init aos-animate">
+              <div class="collection-image collection-image--portrait image-wrap">
+                <img class="lazyautosizes lazyloaded"   src="images/80703D37-102B-4DA2-925F-88563A82E44B_360x.jpg" data-aspectratio="0.8" data-widths="[360, 540, 720, 900, 1080]"
+                  data-sizes="auto" alt="Buy Pure Zari Kanchipuram Silk Saree | Kanjivaram Pure Silk Saree"
+                  style="object-position: center center;"
+                  sizes="279px">
+              </div>
+              <span
+                class="collection-item__title collection-item__title--overlaid collection-item__title--body collection-item__title--center">
+                <span>
+                      Cotton Sarees
+                </span>
+              </span>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- shop section -->
 
   <section class="shop_section layout_padding">
@@ -481,7 +695,7 @@
     <div class="container">
       <div class="heading_container">
         <h2>
-          Testimonial
+          About Our Owner
         </h2>
       </div>
       <div id="carouselExample2Controls" class="carousel slide" data-ride="carousel">
@@ -496,11 +710,11 @@
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                       
+                        Mr Kirubakaran
                       </h6>
                     </div>
                     <p>
-                     
+                      He doesn’t just sell sarees; he rules the saree world!
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -518,11 +732,11 @@
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                       
+                        Mr Kirubakaran
                       </h6>
                     </div>
                     <p>
-                      
+                      He’s not just selling sarees; he’s setting trends like a true monarch.
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -540,11 +754,11 @@
                   <div class="detail-box">
                     <div class="name">
                       <h6>
-                      
+                         Mr Kirubakaran
                       </h6>
                     </div>
                     <p>
-                      
+                      When it comes to sarees, he’s not a retailer; he’s royalty.
                     </p>
                     <i class="fa fa-quote-left" aria-hidden="true"></i>
                   </div>
@@ -656,16 +870,16 @@
                 Location
               </span>
             </a>
-            <a href="">
+            <a href="tel:+919381143141">
               <i class="fa fa-phone" aria-hidden="true"></i>
               <span>
-                Call +01 1234567890
+                Call +91 9381143141
               </span>
             </a>
             <a href="">
               <i class="fa fa-envelope"></i>
               <span>
-                demo@gmail.com
+                mahalingasilks@gmail.com
               </span>
             </a>
           </div>
